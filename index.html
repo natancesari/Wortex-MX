@@ -60,12 +60,12 @@
       background: linear-gradient(90deg, var(--red-dark) 0%, var(--red-primary) 100%);
       color: var(--white);
       text-align: center;
-      padding: 18px 16px;
+      padding: 16px 16px;
       border-bottom: 3px solid var(--green-cta);
     }
 
     header h1 {
-      font-size: 2.1rem;
+      font-size: 2rem;
       font-weight: 900;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -73,15 +73,15 @@
     }
 
     header p {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--red-light);
       font-weight: 500;
     }
 
     /* Container Principal */
     .main-container {
-      max-width: 900px;
-      margin: 32px auto;
+      max-width: 860px;
+      margin: 26px auto;
       padding: 0 16px;
     }
 
@@ -91,121 +91,85 @@
       border-radius: 16px;
       border: 1px solid var(--border-color);
       box-shadow: 0 8px 26px rgba(31, 41, 51, 0.07);
-      padding: 34px 30px;
+      padding: 28px 26px;
       display: grid;
-      grid-template-columns: 0.88fr 1.12fr;
-      gap: 34px;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 28px;
       align-items: center;
-      margin-bottom: 24px;
+      margin-bottom: 18px;
     }
 
     .product-image-col {
       text-align: center;
       background: radial-gradient(circle, var(--green-soft) 0%, var(--white) 75%);
-      padding: 24px 16px;
+      padding: 18px 14px;
       border-radius: 12px;
     }
 
     .product-img {
-      max-width: 230px;
+      max-width: 210px;
       width: 100%;
       height: auto;
       object-fit: contain;
-      filter: drop-shadow(0 12px 20px rgba(31, 41, 51, 0.14));
+      filter: drop-shadow(0 10px 18px rgba(31, 41, 51, 0.14));
     }
 
     .product-info-col h2 {
-      font-size: 1.45rem;
+      font-size: 1.4rem;
       color: var(--red-dark);
-      margin-bottom: 12px;
-      line-height: 1.28;
+      margin-bottom: 10px;
+      line-height: 1.25;
       font-weight: 800;
     }
 
     .product-description {
-      font-size: 0.96rem;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-    }
-
-    .short-bullets {
-      list-style: none;
-      margin-bottom: 22px;
-    }
-
-    .short-bullets li {
-      position: relative;
-      padding-left: 26px;
-      margin-bottom: 8px;
       font-size: 0.94rem;
-      font-weight: 600;
-      color: var(--text-dark);
+      color: var(--text-muted);
+      margin-bottom: 18px;
     }
 
-    .short-bullets li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--green-cta);
-      font-weight: 900;
-      font-size: 1.05rem;
-    }
-
-    /* Caixa de Preço + Botão Verde */
+    /* Caixa de Preço Limpa + Botão Verde em Destaque */
     .purchase-box {
       background-color: var(--bg-color);
-      border: 2px solid var(--red-primary);
+      border: 1px solid var(--border-color);
       border-radius: 12px;
-      padding: 20px;
+      padding: 18px;
       text-align: center;
     }
 
     .price-display {
-      background: linear-gradient(135deg, var(--red-primary) 0%, var(--red-dark) 100%);
-      color: var(--white);
-      border-radius: 10px;
-      padding: 14px 18px;
       display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-bottom: 16px;
+      align-items: baseline;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
     }
 
     .old-price {
-      text-align: center;
-    }
-
-    .old-price span {
-      display: block;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      opacity: 0.9;
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 600;
     }
 
     .old-price s {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #FBD5CE;
+      color: var(--text-muted);
     }
 
     .new-price {
-      text-align: center;
-    }
-
-    .new-price span {
-      display: block;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      color: #FFF2CC;
-      font-weight: 700;
-    }
-
-    .new-price strong {
       font-size: 2rem;
       font-weight: 900;
-      color: var(--white);
+      color: var(--red-primary);
       line-height: 1;
+    }
+
+    .discount-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--red-dark);
+      background-color: var(--red-light);
+      padding: 3px 8px;
+      border-radius: 4px;
     }
 
     .btn-buy {
@@ -217,10 +181,10 @@
       font-weight: 900;
       text-transform: uppercase;
       text-decoration: none;
-      padding: 16px 24px;
+      padding: 17px 24px;
       border-radius: 8px;
       letter-spacing: 0.5px;
-      box-shadow: 0 5px 16px rgba(82, 166, 37, 0.38);
+      box-shadow: 0 6px 18px rgba(82, 166, 37, 0.42);
       transition: background-color 0.2s ease, transform 0.2s ease;
     }
 
@@ -230,59 +194,19 @@
     }
 
     .cod-highlight {
-      margin-top: 12px;
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: var(--text-dark);
-    }
-
-    /* Info COD e Restrições México */
-    .cod-info-card {
-      background-color: var(--white);
-      border-radius: 12px;
-      border: 1px solid var(--border-color);
-      padding: 24px 28px;
-      margin-bottom: 24px;
-    }
-
-    .cod-info-card h3 {
-      font-size: 1.15rem;
-      color: var(--red-dark);
-      margin-bottom: 14px;
-      text-align: center;
-      font-weight: 800;
-    }
-
-    .steps-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-bottom: 18px;
-    }
-
-    .step-item {
-      background-color: var(--bg-color);
-      border: 1px solid var(--border-color);
-      padding: 16px 14px;
-      border-radius: 8px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    .step-item strong {
-      display: block;
-      color: var(--red-primary);
-      margin-bottom: 4px;
-      font-size: 0.95rem;
-    }
-
-    .delivery-note {
+      margin-top: 10px;
       font-size: 0.85rem;
+      font-weight: 600;
       color: var(--text-muted);
-      background-color: var(--red-light);
-      border-left: 4px solid var(--red-primary);
-      padding: 12px 14px;
-      border-radius: 4px;
+    }
+
+    /* Parágrafo Simples e Discreto de Informações */
+    .simple-info-note {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      padding: 0 6px;
+      text-align: center;
     }
 
     /* Rodapé Blindado */
@@ -290,9 +214,9 @@
       background-color: #182026;
       color: #D2DAE0;
       text-align: center;
-      padding: 32px 16px;
+      padding: 28px 16px;
       font-size: 0.82rem;
-      margin-top: 36px;
+      margin-top: 30px;
     }
 
     .footer-inner {
@@ -301,7 +225,7 @@
     }
 
     .footer-links {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -380,19 +304,23 @@
     }
 
     @media (max-width: 720px) {
-      .product-card,
-      .steps-row {
+      .product-card {
         grid-template-columns: 1fr;
+        padding: 20px 16px;
+        gap: 16px;
       }
 
-      .product-card {
-        padding: 24px 18px;
-        gap: 20px;
+      .product-img {
+        max-width: 170px;
+      }
+
+      .product-info-col h2,
+      .product-description {
+        text-align: center;
       }
 
       .product-info-col h2 {
-        font-size: 1.35rem;
-        text-align: center;
+        font-size: 1.28rem;
       }
     }
   </style>
@@ -413,8 +341,8 @@
           src="wortex.png" 
           alt="Cápsulas Wortex con Extractos Naturales" 
           class="product-img" 
-          width="230" 
-          height="300" 
+          width="210" 
+          height="274" 
           loading="eager" 
           fetchpriority="high"
         >
@@ -424,62 +352,32 @@
         <h2>Suplemento en Cápsulas con Extractos Naturales para tu Bienestar Diario</h2>
         
         <p class="product-description">
-          <strong>Wortex</strong> es un suplemento alimenticio en cápsulas formulado con extractos naturales de origen vegetal, pensado para adultos que buscan complementar su nutrición y mantener hábitos diarios equilibrados.
+          <strong>Wortex</strong> es un suplemento alimenticio en cápsulas con extractos naturales de origen vegetal, pensado para complementar tu nutrición diaria de forma práctica.
         </p>
 
-        <ul class="short-bullets">
-          <li>Composición natural elaborada con extractos botánicos seleccionados.</li>
-          <li>Presentación práctica en cápsulas de fácil consumo diario.</li>
-          <li>Atención telefónica disponible las 24 horas para confirmar tu envío.</li>
-        </ul>
-
-        <!-- Preço + Botão Verde -->
+        <!-- Preço Limpo + Botão Verde -->
         <div class="purchase-box">
           <div class="price-display">
-            <div class="old-price">
-              <span>Precio Regular:</span>
-              <s>1180 MXN</s>
-            </div>
-            <div class="new-price">
-              <span>Oferta con 50% de Descuento:</span>
-              <strong>590 MXN</strong>
-            </div>
+            <span class="old-price"><s>1180 MXN</s></span>
+            <strong class="new-price">590 MXN</strong>
+            <span class="discount-tag">-50%</span>
           </div>
 
           <a href="https://ee58e.doctorgalfer.com/l" class="btn-buy" referrerpolicy="origin-when-cross-origin">
-            Pedir con 50% de Descuento
+            Pedir Ahora con 50% de Descuento
           </a>
 
           <div class="cod-highlight">
-            📦 Método de Pago: A la Entrega (Pagas en efectivo al recibir)
+            Pago en efectivo al recibir tu paquete
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Info COD & Restricciones México -->
-    <section class="cod-info-card">
-      <h3>¿Cómo solicitar Wortex con pago al recibir en México?</h3>
-      
-      <div class="steps-row">
-        <div class="step-item">
-          <strong>1. Formulario Online</strong>
-          Haz clic en el botón de pedido y registra tu nombre y número de teléfono.
-        </div>
-        <div class="step-item">
-          <strong>2. Confirmación 24/7</strong>
-          Un operador se comunicará contigo (atención las 24 horas, los 7 días) para confirmar tu dirección.
-        </div>
-        <div class="step-item">
-          <strong>3. Pago al Recibir</strong>
-          Recibes el paquete en tu domicilio y pagas <strong>590 MXN</strong> directamente al repartidor.
-        </div>
-      </div>
-
-      <div class="delivery-note">
-        <strong>📍 Aviso de Cobertura Logística:</strong> Envíos disponibles en la mayor parte de México. Por restricciones operativas del distribuidor, actualmente <strong>no se realizan entregas en Baja California, Baja California Sur, Tabasco, Quintana Roo, Chiapas, Guerrero ni Puebla</strong>.
-      </div>
-    </section>
+    <!-- Explicação Simples em Parágrafo -->
+    <p class="simple-info-note">
+      <strong>Cómo funciona tu pedido:</strong> Al presionar el botón verde, registras tu nombre y teléfono en el formulario oficial; un operador te llamará (atención 24/7) para confirmar tu dirección y pagas 590 MXN en efectivo directamente al repartidor al recibir. Envíos en la mayor parte de México (sin cobertura en Baja California, Baja California Sur, Tabasco, Quintana Roo, Chiapas, Guerrero y Puebla).
+    </p>
   </main>
 
   <!-- Rodapé Blindado -->
